@@ -4,8 +4,9 @@
   "description": "uk vehicle registration validator and formatter",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/test.js --reporter spec"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "uk-vehicle-number-format"
@@ -17,5 +18,8 @@
     "vehicle"
   ],
   "author": "rmilton",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^9.1.3"
+  }
 }
