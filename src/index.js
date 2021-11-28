@@ -37,7 +37,7 @@ const getRegPattern = regChars => regChars
   .map(c => /[0-9]/.test(c) ? 'N' : 'L')
   .join('')
 
-export const validate = reg => {
+const validate = reg => {
   const upperCaseReg = reg.toUpperCase()
   const pattern = getRegPattern(reg.split(''))
 
@@ -49,7 +49,7 @@ export const validate = reg => {
   return false
 }
 
-export const formatReg = reg => {
+const formatReg = reg => {
   const regChars = reg.split('')
   const format = getRegPattern(regChars)
 
@@ -78,4 +78,9 @@ export const formatReg = reg => {
   if (spaceIndex) regChars.splice(spaceIndex, 0, ' ')
 
   return regChars.join('').toUpperCase()
+}
+
+module.exports = {
+  formatReg,
+  validate
 }

@@ -1,5 +1,9 @@
-import * as assert from 'assert'
-import { validate, formatReg } from './index.js'
+// import * as assert from 'assert'
+// import { validate, formatReg } from './index'
+const assert = require('assert')
+const ukReg = require('./index')
+
+const { formatReg, validate } = ukReg
 
 describe('vehicle number format', () => {
   const currentFormat = 'AB12CDE'

@@ -6,7 +6,6 @@
   "scripts": {
     "test": "mocha src/test.js --reporter spec"
   },
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "uk-vehicle-number-format"
