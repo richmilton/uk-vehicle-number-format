@@ -3,17 +3,19 @@
 
 Validates UK and Isle of Man issued vehicle registration numbers against known formats.
 
+Catches most (not all) invalid formats including leading zeros eg A012BCD
+
 `npm i uk-vehicle-number-format`
 
-Formats unspaced numbers e.g
+Formats unspaced numbers
 ```
     format(A1) // returns A 1
     format(A100) // returns A1 100
     format(AB1000) // returns AB 1000
     format(A1ABC) // returns A1 ABC
     format(AA11ABC) // returns AA11 ABC
+    format(123D456) // returns 123 D 456
 ```
-
 Validates unspaced numbers
 ```
     validate(A1) // returns true
@@ -27,7 +29,7 @@ Validates unspaced numbers
     validate(ABC1) // returns true
     validate(ABC12) // returns true
     validate(ABC123) // returns true
-    validate(MAN1234) // returns true IoM must ocntain MAN
+    validate(MAN1234) // returns true IoM must contain MAN
     validate(MIB1234) // returns true NI must contain I or Z
     validate(ABC1D) // returns true
     validate(ABC12D) // returns true
@@ -36,5 +38,5 @@ Validates unspaced numbers
     validate(A12BCD) // returns true
     validate(A123BCD) // returns true
     validate(AB12CDE) // returns true
-    validate(123D456) // returns true (diplomatic)
+    validate(123D456) // returns true (diplomatic) must contain D
 ```
