@@ -2,6 +2,7 @@
   "name": "uk-vehicle-number-format",
   "version": "1.0.2",
   "description": "uk vehicle registration validator and formatter",
+  "homepage": "https://github.com/richmilton/uk-vehicle-number-format",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/test.js --reporter spec"
@@ -16,7 +17,7 @@
     "number",
     "vehicle"
   ],
-  "author": "rmilton",
+  "author": "richmilton",
   "license": "ISC",
   "devDependencies": {
     "mocha": "^9.1.3"
