@@ -1,6 +1,6 @@
 {
   "name": "uk-vehicle-number-format",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "uk vehicle registration validator and formatter",
   "homepage": "https://github.com/richmilton/uk-vehicle-number-format",
   "main": "index.js",
