@@ -1,7 +1,5 @@
-// import * as assert from 'assert'
-// import { validate, formatReg } from './index'
 const assert = require('assert')
-const ukReg = require('./index')
+const ukReg = require('../src')
 
 const { formatReg, validate } = ukReg
 

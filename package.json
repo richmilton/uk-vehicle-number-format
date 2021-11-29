@@ -1,10 +1,10 @@
 {
   "name": "uk-vehicle-number-format",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "uk vehicle registration validator and formatter",
   "main": "index.js",
   "scripts": {
-    "test": "mocha src/test.js --reporter spec"
+    "test": "mocha test/test.js --reporter spec"
   },
   "repository": {
     "type": "git",
